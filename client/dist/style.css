@@ -1,0 +1,29 @@
+#adidas {
+  display: flex;
+  /* overflow: auto; */
+  /* display: grid; */
+
+
+}
+#banner {
+  grid-area: banner;
+  height: 500px;
+  border-bottom: 1px solid grey;
+}
+
+#imageCarousel {
+  flex: 3;
+  /* grid-area: imageCarousel; */
+  /* position: fixed; */
+  /* z-index:1; */
+  /* z-index:0; */
+}
+
+#sidebar {
+  flex: 1;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  /* grid-area: sidebar; */
+  /* overflow-y: scroll; */
+}

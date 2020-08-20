@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>All Day I Dream About Schemas </title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div id='adidas'>
+        <div id='banner'></div>
+        <div id="imageCarousel">Image Carousel</div>
+        <div id="sidebar">Sidebar</div>
+      </div>
+      <!-- <div id="explore"></div> -->
+      <script src="http://localhost:5291/bundle.js"></script>
+      <script src="http://localhost:3380/bundle.js"></script>
+      <!-- <script src="http://localhost:3141/bundle.js"></script> -->
+
+      <script>
+        ReactDom.render(React.createElement(sidebar), document.getElementById('sidebar'));
+        ReactDom.render(React.createElement(imageCarousel), document.getElementById('imageCarousel'));
+      </script>
+    </body>
+  </html>
