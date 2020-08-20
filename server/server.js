@@ -26,6 +26,15 @@ app.get('/kix', function (req, res) {
     .catch((response) => {console.log('catch', response.data)})
 })
 
+app.get('/api/reviews', function (req, res) {
+  axios.get('http://127.0.0.1:3001/api/reviews')
+    .then(response => {
+      // console.log(response.data);
+      res.status(200).send(response.data)
+    })
+    .catch((response) => {console.log('catch', response.data)})
+})
+
 
 // app.post('/sidebar/summary', (req, res) => {
 
