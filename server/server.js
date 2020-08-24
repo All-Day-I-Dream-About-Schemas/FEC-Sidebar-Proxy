@@ -44,7 +44,7 @@ app.post('/sidebar/summary', (req, res) => {
 })
 
 app.post('/kix', (req, res) => {
-  console.log(req.body)
+  // console.log(req.body)
   axios.post('http://ec2-13-52-180-39.us-west-1.compute.amazonaws.com/kix', req.body)
   .then((response) => res.send(response.data))
   .catch((error) => res.send(error));
